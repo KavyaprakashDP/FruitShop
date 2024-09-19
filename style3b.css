@@ -1,0 +1,110 @@
+*{
+    margin: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    border:border-box;
+}
+
+.hero-section {
+    background-image: url('https://miro.medium.com/v2/resize:fit:942/1*sJ3PpELHYkY-V55Z1TIypQ.png');
+    height: 380px;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.shop-section{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+    flex-wrap: wrap;
+}
+.box{
+    /* border:2px solid black; */
+    background-size: contain;
+    height:auto;
+    width:max-content; 
+    background-color: white;
+    margin-top: 10px;
+ }
+
+ .box-img{
+     height:250px;
+     width:100%;
+     background-size: cover;
+     /* background-repeat: contain; */
+     margin-top: 1rem;
+     margin-bottom: 1rem;
+     
+   
+     /* padding: 20px 0px 15px ; */
+ }
+ 
+ .box-content{
+     margin-left: 1rem;
+     margin-right: 1rem;
+     padding-bottom: 25px;
+     background-image: contain;
+     background-repeat: no-repeat;
+ 
+ }
+ .box-content p{
+     color:#007185 ;
+ }
+ .tile:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.19), 0 16px 16px rgba(0, 0, 0, 0.23);
+  }
+  .move{
+    height: max-content;
+    width: auto;
+    background-color: #f8ec48;
+    position: absolute;
+    top:center;
+    left:center;
+    border: 2px solid  #f8ec48 ;
+    border-radius: 10%; 
+ 
+    animation: colorAnimate 5s ease-in 0s infinite normal;
+}
+
+@keyframes colorAnimate {
+    from{
+        left:0px;
+        background-color:rgb(243, 163, 13);
+    }
+    30%{
+        background-color:rgb(197, 139, 30);
+    }
+    60%{
+        left:350px;
+        background-color:rgb(133, 119, 94);
+        color: white;
+    }
+    100%{
+        left:400px;
+        background-color:rgb(243, 163, 13);
+        color:black;
+    }
+
+
+}
+footer{
+    margin-top: 15px;
+}
+.foot-pannel{
+    background-color:#ede573;
+    color:black;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+
+
+
+
+  
